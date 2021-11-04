@@ -1,0 +1,102 @@
+:root {
+  --prim: #0c7c59;
+  --second: #f1faee;
+  --tert: #2b303a;
+  --accent-dark: #d64933;
+  --accent-light: #fe5f55;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--tert);
+  padding: 10px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  color: var(--second)
+}
+
+.together {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-circle {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+header h1 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+header nav {
+  margin: 10px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+}
+
+header nav ul a {
+  padding: 10px 15px;
+  color: var(--second);
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--second);
+  color: var(--tert)
+}
+
+.profile-pic {
+display: inline;
+margin: auto;
+padding-bottom: -50%; /*trying to move image up*/
+width: 100%;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  border: 1px solid var(--accent-light);
+  background-color: var(--accent-dark);
+  align-items: center;
+  background-color: white;
+}
+
+.project-items h3 {
+  text-decoration: none;
+}
+
+.project-item:hover {
+  transform: scale(1.25);
+  transition: .15s;
+
+}
+
+.project-img {
+  width: auto;
+  height: 200px;
+}
