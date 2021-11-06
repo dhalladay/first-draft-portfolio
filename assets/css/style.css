@@ -188,9 +188,9 @@ main {
 }
 
 .project-item:hover {
-  filter: brightness(105%) saturate(120%);
+  filter: brightness(110%) saturate(120%);
   z-index: 11;
-  transition: .15s;
+  transition: .25s;
 }
 
 .project-item h3 {
