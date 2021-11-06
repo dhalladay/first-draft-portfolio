@@ -128,7 +128,10 @@ main {
  display: inline;
  width: 100%;
  position: absolute;
- filter: hue-rotate(50);
+ filter: hue-rotate(250deg);
+ top: -25%;
+ right: -8%;
+ transform:rotate(45deg);
 }
 
  /* About me section styling  */
