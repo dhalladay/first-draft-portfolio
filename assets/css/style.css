@@ -37,7 +37,20 @@ header h1 {
   color:var(--accent-light);
   text-shadow: 0 0 10px rgba(0,0,0,1);
   align-items: center;
+  animation-duration: 1.5s;
+  animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+    margin-left: -300%;
+  }
+
+  to {
+    margin: left 0%;
+  }
+}
+
 /* create link to top of page by pressing header h1 */
 .home{
   text-decoration: none;
@@ -50,6 +63,8 @@ header h1 {
  /* begin navigation bar styling */
 header nav {
   margin: 10px 0;
+  animation-duration: 1.5s;
+  animation-name: slideinright;
 }
 
 header nav ul {
@@ -58,7 +73,6 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  
 }
 
 header nav ul a {
@@ -67,6 +81,16 @@ header nav ul a {
   text-decoration: none;
   font-size: 1.55vw;
   text-shadow: 0 0 7px rgba(0,0,0,1);
+}
+
+@keyframes slideinright {
+  from {
+    margin-right: -300%;
+  }
+
+  to {
+    margin: right 0%;
+  }
 }
 
 header nav ul a:hover {
@@ -130,8 +154,26 @@ main {
  position: absolute;
  filter: hue-rotate(250deg);
  top: -25%;
- right: -8%;
  transform:rotate(45deg);
+ -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
 }
 
  /* About me section styling  */
@@ -232,6 +274,7 @@ main {
 }
 
 /* Contact info section styling */
+
 #contact div {
   color:var(--accent-light);
   text-decoration: none;
