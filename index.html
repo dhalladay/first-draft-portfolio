@@ -10,82 +10,90 @@
 
     <body>
         <header>
-          <div class="together">
-            <div class="image-circle">
-              <img src="./assets/images/IMG_0770.jpg" alt="Picture of David Halladay" class="profile-pic" />
-            </div>
             <h1>
-            David Halladay
+              David Halladay | Portfolio
             </h1>
-          </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                      <a href="#work">Work</a>
-                    </li>
-                    <li>
-                      <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+          <nav>
+            <ul>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#work">Work</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </header>
 
         <section class="hero">
+          <div class="image-circle">
+            <img src="./assets/images/IMG_0770.jpg" alt="Picture of David Halladay" class="profile-pic" />
+          </div>
         </section>
-
+        
         <main>
-          <section id="about">
-            <h2>
+          <section id="about" class="content">
+            <h2 class="section-header">
               About Me
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi hic mollitia corrupti nostrum similique dolorem, perspiciatis laudantium labore deleniti quod, molestiae quam doloremque eligendi? Quam tempora quidem voluptate dolore? Provident.
             </p>
           </section>
-          <section id="work">
-            <h2>
-              Work
+
+          <section id="work" class="content">
+            <h2 class="section-header">
+                Work
             </h2>
             <div class="projects">
-              <a href="https://dhalladay.github.io/run-buddy/">
-                <div class="project-item">
-                 <h3>Run-Buddy</h3>
-                  <img src="./assets/images/IMG_0770.jpg" alt="screenshot of run-buddy website" class="project-img"/>
+                <div class="project-item first-row">
+                  <h3>
+                    Run Buddy
+                  </h3>
+                  <a href="https://dhalladay.github.io/run-buddy/" target="_blank" class="project-link">
+                     <img src="./assets/images/run-buddy snap.PNG" alt="screenshot of run-buddy website clicking the image will take you to the website" class="project-img"/>
+                  </a>  
                 </div>
-            </a>
+              
               <div class="project-item">
-                <h3>Project 2</h3>
-                <img src="./assets/images/IMG_0770.jpg" alt="placeholder for second project" class="project-img"/>
+                <h3>Gladiator Robots</h3>
+                <img src="https://via.placeholder.com/200" alt="placeholder for gladiator-robots" class= "project-img">
               </div>
+
               <div class="project-item">
                 <h3>Project 3</h3>
-                <img src="./assets/images/IMG_0770.jpg" alt="placeholder for third project" class="project-img"/>
+                <img src="https://via.placeholder.com/200" alt="placeholder for third project" class="project-img"/>
               </div>
+
               <div class="project-item">
                 <h3>Project 4</h3>
-                <img src="./assets/images/IMG_0770.jpg" alt="placeholder for fourth project" class="project-img"/>
+                <img src="https://via.placeholder.com/200" alt="placeholder for fourth project" class="project-img"/>
               </div>
+
               <div class="project-item">
                 <h3>Project 5</h3>
-                <img src="./assets/images/IMG_0770.jpg" alt="placeholder for fifth project" class="project-img"/>
+                <img src="https://via.placeholder.com/200" alt="placeholder for fifth project" class="project-img"/>
               </div>
+
             </div>
           </section>
-          <section id="contact">
-            <h2>
+        
+          <aside id="contact" class="content">
+            <h2 class="section-header">
               Contact Info
-            </h2>
+            </h2><br>
             <div>
               <h3>David Halladay</h3>
               <address>
                 Phone: 888-888-8888<br>
-                Email: dave.halladay@outlook.com
+                Email: <a href="mailto:dave.halladay@outlook.com">dave.halladay@outlook.com</a><br>
+                Github: <a href="https://github.com/dhalladay" target="_blank">https://github.com/dhalladay</a>
               </address>
             </div>
-          </section>
+          </aside>
         </main>
 
         <footer>
