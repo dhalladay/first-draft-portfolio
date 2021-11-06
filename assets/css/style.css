@@ -14,6 +14,7 @@
 body {
   background-color: var(--prim);
   color: var(--tert);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Begin <header> style */
@@ -190,10 +191,12 @@ main {
   height: auto;
   flex: 1 0 49%;
   position: relative;
+  margin: 1px;
 }
 
 .project-item:hover {
   filter: brightness(110%) saturate(120%);
+  transform: scale(1.1);
   z-index: 11;
   transition: .25s;
 }
@@ -207,7 +210,9 @@ main {
   margin-bottom: 10px;
   margin-left:10px;
   color: var(--accent-light);
-  border: 2px solid var(--tert);
+  border: 2px solid var(--accent-light);
+  box-shadow: 0 0 10px rgba(0,0,0,.7);
+  border-radius: 1px;
 }
 
 .first-row{
@@ -329,6 +334,7 @@ footer {
   #about {
     padding-top: 10px;
     padding-bottom: 10px;
+    scroll-margin-top: 5em;
   }
   
   #about p {
@@ -340,6 +346,10 @@ footer {
 
   header {
     padding: 2px;
+  }
+
+  #work {
+    scroll-margin-top: 5em;
   }
 }
 
