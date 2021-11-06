@@ -16,6 +16,7 @@ body {
   color: var(--tert);
 }
 
+/* Begin <header> style */
 header {
   display:flex;
   flex-wrap: wrap;
@@ -36,7 +37,7 @@ header h1 {
   text-shadow: 0 0 10px rgba(0,0,0,1);
   align-items: center;
 }
-
+/* create link to top of page by pressing header h1 */
 .home{
   text-decoration: none;
   color: var(--accent-light);
@@ -45,7 +46,7 @@ header h1 {
 .home:hover {
   color: var(--second);
 }
-
+ /* begin navigation bar styling */
 header nav {
   margin: 10px 0;
 }
@@ -70,12 +71,18 @@ header nav ul a {
 header nav ul a:hover {
   color:var(--second);
 }
+/* end header styling */
 
+/* begin main content styling */
 main {
   flex-direction: column;
   width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
+/* hero styling begins */
 .hero {
   height: 400px;
   width: auto;
@@ -87,23 +94,6 @@ main {
   background-size: cover;
   background-position: center;
   border-bottom: 5px solid var(--accent-light);
-}
-
-.image-circle {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(0,0,0,.7);
-  margin: auto 100px auto auto;
-  position: relative;
-}
-
-.profile-pic {
-  display: inline;
-  width: 100%;
-  position: absolute;
 }
 
 .hero h2 {
@@ -121,12 +111,26 @@ main {
   color:var(--accent-light);
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+/* stying for photo in hero */
+.image-circle {
+ width: 300px;
+ height: 300px;
+ position: relative;
+ overflow: hidden;
+ border-radius: 50%;
+ box-shadow: 0 0 20px rgba(0,0,0,.7);
+ margin: auto 100px auto auto;
+ position: relative;
 }
 
+.profile-pic {
+ display: inline;
+ width: 100%;
+ position: absolute;
+ filter: hue-rotate(50);
+}
+
+ /* About me section styling  */
 #about {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -160,6 +164,7 @@ main {
   width: 10%;
 }
 
+/* Work/projects section styling */
 #work {
   background-color: var(--second);
 }
@@ -218,6 +223,7 @@ main {
   height: auto;
 }
 
+/* Contact info section styling */
 #contact div {
   color:var(--accent-light);
   text-decoration: none;
@@ -234,7 +240,9 @@ main {
   color: var(--second);
   text-decoration: underline;
 }
+/* end main content styling */
 
+/* footer styling */
 footer {
   color:var(--second);
   background-color: var(--tert);
@@ -308,6 +316,7 @@ footer {
   }
 }
 
+/* queries */
 @media screen and (max-width: 575px) {
   .image-circle {
     display: none;
