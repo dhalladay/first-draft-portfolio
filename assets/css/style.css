@@ -33,9 +33,17 @@ header h1 {
   display: flex;
   justify-content: space-around;
   color:var(--accent-light);
-  margin-left: 10px;
-  margin-top: 10px;
   text-shadow: 0 0 10px rgba(0,0,0,1);
+  align-items: center;
+}
+
+.home{
+  text-decoration: none;
+  color: var(--accent-light);
+}
+
+.home:hover {
+  color: var(--second);
 }
 
 header nav {
@@ -78,6 +86,7 @@ main {
   background-image: url("../images/IMG_0777.jpg");
   background-size: cover;
   background-position: center;
+  border-bottom: 5px solid var(--accent-light);
 }
 
 .image-circle {
@@ -88,11 +97,13 @@ main {
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(0,0,0,.7);
   margin: auto 100px auto auto;
+  position: relative;
 }
 
 .profile-pic {
-  display: block;
+  display: inline;
   width: 100%;
+  position: absolute;
 }
 
 .hero h2 {
@@ -110,20 +121,34 @@ main {
   color:var(--accent-light);
 }
 
-.main {
+main {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+#about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#about p {
+  padding-left: 20%;
+  padding-right: 20%;
+  width: 85%;
+  margin: 10px;
 }
 
 .content {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: relative;
-  width: auto;
   color:var(--accent-light);
-  align-items: stretch;
-  border-right: 2;
+  align-items: center;
+  padding: 2%;
+  width: 100%;
+  border-bottom: 5px solid var(--accent-light);
 }
 
 .section-header {
@@ -132,20 +157,21 @@ main {
   color:var(--accent-light);
   flex: 1 0 0;
   border-right: 2px solid var(--accent-light);
-  width: 100px;
+  width: 10%;
 }
 
-#about p {
-  width: 85%;
-  margin: 10px;
+#work {
+  background-color: var(--second);
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 4px;
   border-radius: 5px;
   max-width: 90%;
+  position: relative;
 }
 
 .project-link {
@@ -153,13 +179,30 @@ main {
 }
 
 .project-item {
-  border: 1px solid var(--prim);
-  background-color:var(--accent-light);
-  text-align: right;
+  text-align: center;
   z-index: 10;
   width: 100%;
   height: auto;
-  flex: 1 0 0;
+  flex: 1 0 49%;
+  position: relative;
+}
+
+.project-item:hover {
+  filter: brightness(105%) saturate(120%);
+  z-index: 11;
+  transition: .15s;
+}
+
+.project-item h3 {
+  text-align: center;
+  position: absolute;
+  background-color: var(--prim);
+  padding: 10px;
+  bottom: 0;
+  margin-bottom: 10px;
+  margin-left:10px;
+  color: var(--accent-light);
+  border: 2px solid var(--tert);
 }
 
 .first-row{
@@ -175,19 +218,11 @@ main {
   height: auto;
 }
 
-.project-items h3 {
-  text-decoration: none;
-}
-
-.project-item:hover {
-  transform: scale(1.10);
-  z-index: 11;
-  transition: .15s;
-}
-
 #contact div {
   color:var(--accent-light);
   text-decoration: none;
+  width: 90%;
+  text-align: right;
 }
 
 #contact div a {
@@ -196,14 +231,106 @@ main {
 }
 
 #contact div a:hover {
-  color: blue;
+  color: var(--second);
   text-decoration: underline;
 }
 
-/*Mediat queries */
+footer {
+  color:var(--second);
+  background-color: var(--tert);
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+/*Media queries */
 
 @media screen and (max-width: 980px) {
-  body {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/IMG_0777.jpg");
+
+  .section-header {
+    border: none;
+  }
+
+  .image-circle {
+    width: 150px;
+    height: 150px;
+    transition: .25s;
   }
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
+  header h1 {
+    width: 100%;
+    font-size:calc(18px + 1.5vw);
+  }
+  
+  header nav ul {
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    padding: 1px;
+  }
+
+  header nav li a {
+    font-size:calc(12px + 1.5vw);
+  }
+
+  .section-header {
+    font-size: calc(18px + 1.5vw);
+    width: auto;
+  }
+
+  .section-header p {
+    font-size:calc(12px + 1.5vw);
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project-item h3 {
+    font-size:calc(8px + 1.5vw);
+    margin-bottom: 5px;
+    margin-left: 0;
+    border: 3px solid var(--tert);
+  }
+
+  address {
+    text-align: center;
+    font-size:calc(12px + 1.5vw);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .image-circle {
+    display: none;
+  }
+
+  .hero {
+    background-image: url("../images/IMG_0770.jpg");
+  }
+
+  #about {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  #about p {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 85%;
+    margin: 10px;
+  }
+
+  header {
+    padding: 2px;
+  }
+}
+
