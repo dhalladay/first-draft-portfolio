@@ -217,7 +217,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-content: space-between;
   padding: 4px;
   border-radius: 5px;
   max-width: 90%;
@@ -232,8 +232,6 @@ main {
   text-align: center;
   justify-content: space-between;
   z-index: 10;
-  width: 100%;
-  height: auto;
   flex: 1 0 49%;
   position: relative;
   margin: 1px;
@@ -261,7 +259,7 @@ main {
 }
 
 .first-row{
-  flex: 1 0 100%;
+  flex: 2 0 100%
 }
 
 .project-link:hover {
@@ -271,7 +269,6 @@ main {
 .project-link img {
   width: 100%;
   height: auto;
-  max-width: 1200px;
 }
 
 /* Contact info section styling */
