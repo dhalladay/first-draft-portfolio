@@ -224,10 +224,6 @@ main {
   position: relative;
 }
 
-.project-link {
-  text-decoration: none;
-}
-
 .project-item {
   text-align: center;
   justify-content: space-between;
@@ -260,6 +256,10 @@ main {
 
 .first-row{
   flex: 2 0 100%
+}
+
+.project-link {
+  text-decoration: none;
 }
 
 .project-link:hover {
@@ -372,18 +372,7 @@ footer {
 
 /* queries */
 @media screen and (max-width: 575px) {
-  
-  @keyframes slidein {
-    from {
-      margin: left 0%;
-    }
-  
-    to {
-      margin: left 0%;
-    }
-  }
-  
-  .image-circle {
+    .image-circle {
     display: none;
   }
 
