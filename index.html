@@ -1,116 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Dave Halladay | Portfolio</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Dave Halladay | Portfolio</title>
+</head>
 
-    <body>
-      <!-- Header start -->
-        <header>
-            <h1>
-              <a href="#" class="home">David Halladay | Portfolio</a>
-            </h1>
-            <!-- navigation -->
-          <nav>
-            <ul>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#work">Work</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+<body>
+  <header>
+    <h1>
+      <a href="#" class="home">David Halladay | Portfolio</a>
+    </h1>
+  <nav>
+    <ul>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#work">Work</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-        <!-- Header ends/ Hero begins -->
+  <section class="hero">
+    <div class="image-circle">
+      <img src="./assets/images/IMG_0770.jpg" alt="Picture of David Halladay" class="profile-pic" />
+    </div>
+  </section>
+  
+  <main>
+    <section id="about" class="content">
+      <h2 class="section-header">
+        About Me
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi hic mollitia corrupti nostrum similique dolorem, perspiciatis laudantium labore deleniti quod, molestiae quam doloremque eligendi? Quam tempora quidem voluptate dolore? Provident.
+      </p>
+    </section>
 
-        <section class="hero">
-          <div class="image-circle">
-            <img src="./assets/images/IMG_0770.jpg" alt="Picture of David Halladay" class="profile-pic" />
+    <section id="work" class="content container">
+      <div class="row">
+        <h2 class="section-header col-2">
+            Work
+        </h2>
+      </div>
+      <div class="col-8">
+        <div class="row justify-content-between">
+            <div class="project-item col-12 p-3">
+              <h3 class="rounded shadow-lg">Chrip</h3>
+              <a href="https://dhalladay.github.io/travel-app-events/" target="_blank" class="project-link">
+                <img src="./assets/images/chrip.png" alt="screenshot and link to Chrip website, click to proceed" class="project-img rounded"/>
+              </a>  
+            </div>  
+          <div class="project-item col-lg-6 p-3">
+            <h3 class="rounded shadow-lg">Work Day Scheduler</h3>
+            <a href="https://dhalladay.github.io/daily-calendar/" target="_blank" class="project-link">
+              <img src="./assets/images/workday_schedule_screenshot.png" alt="screenshot and link to workday scheduler application" class= "project-img rounded">
+            </a>
           </div>
-        </section>
-        
-        <!-- header ends/ main content begins -->
+          <div class="project-item col-lg-6 p-3">
+            <h3 class="rounded shadow-lg">Pseudo-random Password Generator</h3>
+            <a href="https://dhalladay.github.io/random-password-gen/" target="_blank" class="project-link">
+              <img src="./assets/images/random_pw_generator_screenshot.png" alt="sceenshot and link to a pseudo random password generator" class="project-img rounded"/>
+            </a>
+          </div>
+          <div class="project-item col-lg-6 p-3">
+            <h3 class="rounded shadow-lg">Run-buddy</h3>
+            <a href="https://dhalladay.github.io/run-buddy/" target="_blank" class="project-link">
+              <img src="./assets/images/run-buddy snap.PNG" alt="screenshot and link to run-buddy, a guided html and css example" class="project-img rounded"/>
+            </a>
+          </div>
+          <div class="project-item col-lg-6 p-3">
+            <h3 class="rounded shadow-lg">Coding Quiz</h3>
+            <a href="https://dhalladay.github.io/timed-quiz-quatro/" target="_blank" class="project-link">
+              <img src="./assets/images/snapshot.PNG" alt="screenshot and link to a coding-related quiz" class="project-img rounded mx-auto"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <aside id="contact" class="content">
+      <h2 class="section-header">
+        Contact Info
+      </h2><br>
+      <div>
+        <address>
+          Phone: 888-888-8888<br>
+          Email: <a href="mailto:dave.halladay@outlook.com">dave.halladay@outlook.com</a><br>
+          Github: <a href="https://github.com/dhalladay" target="_blank">https://github.com/dhalladay</a>
+        </address>
+      </div>
+    </aside>
+  </main>
 
-        <main>
-          <section id="about" class="content">
-            <h2 class="section-header">
-              About Me
-            </h2>
-            <p>
-              My name is David Halladay. I am have been working a Systems Support Analyst for the last five years. 
-              During that time I have had the opportunity to learn about and use HTML for accessibility testing and SQL for data querying and analysis. The experience I have had with programming logic has been very positive and gave me a desire to learn more and to take the step of joining a bootcamp to become a full stack developer.
-            </p>
-          </section>
-
-          <section id="work" class="content">
-            <h2 class="section-header">
-                Work
-            </h2>
-            <div class="projects">
-                <div class="project-item first-row">
-                  <h3>
-                    Run Buddy
-                  </h3>
-                  <a href="https://dhalladay.github.io/run-buddy/" target="_blank" class="project-link">
-                     <img src="./assets/images/run-buddy snap.PNG" alt="screenshot of run-buddy website clicking the image will take you to the website" class="project-img"/>
-                  </a>  
-                </div>
-              
-              <div class="project-item">
-                <h3>Gladiator Robots</h3>
-                <img src="https://via.placeholder.com/400x200?text=Thanks+for+coming+to+my+site" alt="placeholder image that says thanks for coming to my site" class= "project-img">
-              </div>
-
-              <div class="project-item">
-                <h3>Project 3</h3>
-                <img src="https://via.placeholder.com/400x200?text=More+projects+coming+soon!" alt="placeholder image that says more project coming soon!" class="project-img"/>
-              </div>
-
-              <div class="project-item">
-                <h3>Project 4</h3>
-                <img src="https://via.placeholder.com/400x200?text=For+now+I+hope+this+will+do" alt="placeholder image that says for now I hope this will do" class="project-img"/>
-              </div>
-
-              <div class="project-item">
-                <h3>Project 5</h3>
-                <img src="https://via.placeholder.com/400x200?text=:\" alt="placeholder image with an emoticon" class="project-img"/>
-              </div>
-
-            </div>
-          </section>
-        
-          <section id="contact" class="content">
-            <h2 class="section-header">
-              Contact Info
-            </h2><br>
-            <div>
-              <address>
-                Phone: 888-888-8888<br>
-                Email: <a href="mailto:dave.halladay@outlook.com">dave.halladay@outlook.com</a><br>
-                Github: <a href="https://github.com/dhalladay" target="_blank">https://github.com/dhalladay</a>
-              </address>
-            </div>
-          </section>
-        </main>
-
-        <!-- main content ends/ begin footer -->
-
-        <footer>
-          <h4>
-            Made by Dave Halladay
-          </h4>
-            
-        </footer>
-
-    </body>
+  <footer>
+    <h4>
+      Made by Dave Halladay
+    </h4>
+      
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
 
 </html>

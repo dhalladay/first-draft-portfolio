@@ -187,6 +187,11 @@ main {
   width: 90%;
 }
 
+.container {
+  max-width: 100%;
+  margin: 0;
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -204,13 +209,13 @@ main {
   margin: auto;
   color:var(--accent-light);
   flex: 1 0 0;
-  border-right: 2px solid var(--accent-light);
   width: 10%;
 }
 
 /* Work/projects section styling */
 #work {
   background-color: var(--second);
+  background-size: cover;
 }
 
 .projects {
@@ -224,14 +229,17 @@ main {
   position: relative;
 }
 
-.project-item {
+.project-link {
+  text-decoration: none;
+}
+
+/* .project-item {
   text-align: center;
   justify-content: space-between;
   z-index: 10;
   flex: 1 0 49%;
   position: relative;
-  margin: 1px;
-}
+} */
 
 .project-item:hover {
   filter: brightness(110%) saturate(120%);
@@ -362,6 +370,10 @@ footer {
     margin-bottom: 5px;
     margin-left: 0;
     border: 3px solid var(--tert);
+  }
+
+  .project-img{
+    object-fit: cover;
   }
 
   address {
