@@ -12,6 +12,7 @@ In order to become more competitive as a full stack developer, it is important t
 
 - HTML
 - CSS
+- Bootstrap
 
 ## Website
 
